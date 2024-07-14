@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Online Payment-Page</title> 
+    <link rel="stylesheet" href="Payment.css"> 
+</head> 
+<body> 
+    <div class="container"> 
+        <form action="#"> 
+            <div class="row"> 
+                <div class="col"> 
+
+                    <h3 class="title"> 
+						Billing Address 
+					</h3> 
+
+
+                    <div class="inputBox"> 
+                        <label for="name"> 
+                            Full Name: 
+                        </label> 
+                        <input type="text" id="name" placeholder="Enter your full name" required> 
+                    </div> 
+                    <div class="inputBox"> 
+                        <label for="email"> 
+                            Email: 
+                        </label> 
+                        <input type="text" id="email" placeholder="Enter email address" required> 
+                    </div> 
+                </div> 
+                <div class="col"> 
+
+                    <h3 class="title">Payment</h3> 
+
+                    <div class="inputBox"> 
+                        <label for="cardName"> 
+                            Name On Card: 
+                        </label> 
+                        <input type="text" id="cardName" placeholder="Enter card name" required> 
+                    </div> 
+                    <div class="inputBox"> 
+                        <label for="cardNum"> 
+                            Credit Card Number: 
+                        </label> 
+                        <input type="text" id="cardNum" placeholder="1111-2222-3333-4444" maxlength="19" required> 
+                    </div> 
+                    <div class="inputBox"> 
+                        <label for="expDate">Exp Date:</label> 
+                        <input type="date" id="expDate" required> 
+                    </div> 
+                    <div class="flex"> 
+                        <div class="inputBox"> 
+                            <label for="cvv">CVV</label> 
+                            <input type="number" id="cvv" placeholder="123" required> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <input type="submit" value="Proceed to Checkout" class="submit_btn"> 
+        </form> 
+    </div> 
+    <script type="text/javascript" src="index.js"></script> 
+</body> 
+</html>
